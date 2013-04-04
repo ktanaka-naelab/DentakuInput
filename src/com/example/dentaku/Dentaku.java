@@ -24,6 +24,20 @@ public class Dentaku extends Activity implements View.OnClickListener {
 	/**
 	 * キー
 	 */
+	private final int KEY_0 = 0;
+	private final int KEY_1 = 1;
+	private final int KEY_2 = 2;
+	private final int KEY_3 = 3;
+	private final int KEY_4 = 4;
+	private final int KEY_5 = 5;
+	private final int KEY_6 = 6;
+	private final int KEY_7 = 7;
+	private final int KEY_8 = 8;
+	private final int KEY_9 = 9;
+	private final int KEY_PLUS = 10;
+	private final int KEY_MINUS = 11;
+	private final int KEY_EQUAL = 12;
+	private final int KEY_TEN = 13;
 	private final int KEY_CLEAR = 14;
 
 	/**
