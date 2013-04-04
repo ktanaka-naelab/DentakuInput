@@ -24,7 +24,23 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080010;
+        public static final int button0=0x7f08000d;
+        public static final int button1=0x7f080009;
+        public static final int button2=0x7f08000a;
+        public static final int button3=0x7f08000b;
+        public static final int button4=0x7f080005;
+        public static final int button5=0x7f080006;
+        public static final int button6=0x7f080007;
+        public static final int button7=0x7f080001;
+        public static final int button8=0x7f080002;
+        public static final int button9=0x7f080003;
+        public static final int buttonClear=0x7f080004;
+        public static final int buttonEqual=0x7f08000f;
+        public static final int buttonMinus=0x7f08000c;
+        public static final int buttonPlus=0x7f080008;
+        public static final int buttonTen=0x7f08000e;
+        public static final int display=0x7f080000;
     }
     public static final class layout {
         public static final int main=0x7f030000;
