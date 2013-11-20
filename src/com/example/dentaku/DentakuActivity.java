@@ -1,6 +1,7 @@
 package com.example.dentaku;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,10 @@ import android.widget.Toast;
 
 public class DentakuActivity extends Activity {
 
+    /*
+     * ログのタグ
+     * 設定しておくと、ログから該当箇所を探しやすくなります。
+     */
     private static final String TAG = "DentakuActivity";
 
     /**
@@ -90,6 +95,13 @@ public class DentakuActivity extends Activity {
                                 total = 0;
                                 beforeStatus = KEY_CLEAR;
                             }
+                            // イコール
+                            else if (i == KEY_EQUAL) {
+                                String text = mTextView.getText().toString();
+                                if (!"".equals(text)) {
+                                    share(mTextView.getText().toString());
+                                }
+                            }
                             // 数字
                             else if (i < 10) {
                                 String nowValue = mTextView.getText().toString();
@@ -104,6 +116,14 @@ public class DentakuActivity extends Activity {
                 }
             });
         }
+    }
+
+    private void share(String text) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, text);
+        startActivity(intent);
     }
 
 }
